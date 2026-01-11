@@ -2,14 +2,40 @@
 <html>
 <head>
   <base href="/">
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="La mia prima To-Do List in Flutter">
+  <meta name="description" content="La mia fantastica To-Do List in Flutter">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Todo App">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <title>Migliore To-Do List</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Semplice stile per la schermata di caricamento */
+    body {
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .loading {
+      color: #008080;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <div class="loading">Caricamento in corso...</div>
+
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
