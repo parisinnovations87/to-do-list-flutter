@@ -1,6 +1,10 @@
-[[plugins]]
-  package = "netlify-plugin-flutter-sdk"
-
 [build]
-  command = "flutter build web --release"
+  # Questo comando scarica Flutter, lo scompatta e compila l'app, tutto in un colpo solo
+  command = """
+    if [ ! -d "flutter" ]; then git clone https://github.com/flutter/flutter.git -b stable; fi &&
+    ./flutter/bin/flutter build web --release
+  """
   publish = "build/web"
+
+[build.environment]
+  FLUTTER_VERSION = "stable"
