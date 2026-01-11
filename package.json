@@ -1,7 +1,0 @@
-{
-  "name": "todo-app-flutter",
-  "version": "1.0.0",
-  "devDependencies": {
-    "netlify-plugin-flutter-sdk": "^0.1.0"
-  }
-}
